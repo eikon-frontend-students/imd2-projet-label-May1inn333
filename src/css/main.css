@@ -5,7 +5,7 @@
 }
 
 body {
-  background: url("/src/img/fond/fond.png") no-repeat center center/cover;
+  background: url("/src/img/fond/fond\ copie.png") no-repeat center center/cover;
 }
 
 .header {
@@ -184,8 +184,8 @@ h3 {
 
 .Cat {
   position: absolute;
-  left: -200;
-  margin-top: 80px;
+  left: -400;
+  margin-top: 700px;
 }
 
 .about {
@@ -210,4 +210,29 @@ h3 {
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
+}
+
+.buttonAbout {
+  position: absolute;
+  font-family: Mohave;
+  display: inline-flex;
+  padding-bottom: 2px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 11.25px;
+  color: #ffffff;
+  font-style: normal;
+  margin-top: 1430px;
+  margin-left: 710px;
+  border-bottom: 2px solid var(--White-white---50, rgba(255, 255, 255, 0.5));
+  width: 95px;
+  font-size: 22;
+}
+
+.catLogo {
+  position: absolute;
+  margin-top: 1045px;
+  margin-left: 50px;
+  width: 336.375px;
+  height: 336.375px;
 }
