@@ -5,18 +5,17 @@
 }
 
 body {
-  background: url("/src/img/fond/fond\ copie.png") no-repeat center center/cover;
+  background-color: #000000;
 }
 
 .header {
-  display: flex; /* aligne horizontalement */
-  align-items: center; /* centre verticalement */
-  justify-content: space-between; /* espace entre logo et menu */
-  position: fixed; /* reste en HAUT de la page */
-  top: 0;
-  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
   z-index: 999;
+  position: fixed;
+  padding-top: 40px;
 }
 
 .logo {
@@ -26,13 +25,14 @@ body {
   aspect-ratio: 109.13/109.13;
   margin-top: 7px;
   margin-left: 24px;
+  position: fixed;
 }
 
 ul.menu {
   list-style: none;
   display: flex;
-  background-color: rgb(0, 0, 0); /* fond noir semi-transparent */
-  position: fixed; /* reste en haut même en scrollant */
+  background-color: rgb(0, 0, 0);
+  position: fixed;
   border-radius: 60px;
   z-index: 1000;
   font-family: Mohave;
@@ -41,6 +41,7 @@ ul.menu {
   font-weight: 300;
   margin-top: 15px;
   margin-left: 540px;
+  border: 2px solid #ff6a00;
 }
 
 ul.menu li {
@@ -62,7 +63,7 @@ ul.menu li {
 }
 
 ul.menu li:hover {
-  background-color: rgba(196, 67, 2, 0.27); /* orange clair au survol */
+  background-color: rgba(196, 67, 2, 0.27);
   border-radius: 60px;
   display: flex;
 }
@@ -96,11 +97,9 @@ h1 {
 }
 
 .container {
-  background-image: url("/src/img/fond/fond.png");
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  height: 6081px;
   background-color: black;
   background-size: cover;
   background-position: center;
@@ -388,4 +387,225 @@ h3 {
 .separator {
   border-bottom: 1px solid rgba(255, 82, 25, 0.491);
   width: 1100px;
+}
+
+.see-more-event {
+  position: absolute;
+  width: 260px;
+  text-align: center;
+  border-radius: 8px;
+  font-family: mohave;
+  margin-top: -170px;
+  margin-left: 690px;
+}
+
+.section h2 {
+  font-size: 45px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.grid-merch {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 30px;
+}
+
+.card-merch {
+  cursor: pointer;
+  position: relative;
+}
+
+.card-merch img {
+  width: 100%;
+}
+
+.card-merch h3 {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.card-merch span {
+  font-size: 22px;
+  color: #aaa;
+  font-weight: lighter;
+  font-style: italic;
+}
+
+.shop {
+  padding: 80px 100px;
+  margin-top: 800px;
+}
+
+.shop-title {
+  font-size: 44px;
+  margin-bottom: 40px;
+  color: #fff;
+  font-family: Mohave;
+  font-weight: 400;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.product {
+  background: black;
+  border-radius: 20;
+}
+
+.product img {
+  width: 100%;
+  display: block;
+}
+
+.info {
+  background: #f26b2a;
+  padding: 20px;
+  border-bottom-left-radius: 20;
+  border-bottom-right-radius: 20;
+}
+
+.name {
+  font-size: 22px;
+  color: #fff;
+  margin: 0 0 8px;
+  font-family: Mohave;
+}
+
+.price {
+  font-weight: 400;
+  font-family: Mohave;
+  font-size: 22px;
+}
+
+.see-more-shop {
+  position: absolute;
+  width: 260px;
+  text-align: center;
+  border-radius: 8px;
+  font-family: mohave;
+  margin-top: 250px;
+  margin-left: 520px;
+}
+
+.newsletter {
+  max-width: 1200px;
+  max-height: 350px;
+  margin: 50px auto;
+  padding: 40px;
+  display: flex;
+  gap: 60px;
+  font-family: Mohave;
+  background: #000;
+  border: 2px solid #ff6a00;
+  border-radius: 30px;
+  color: #fff;
+}
+
+.form {
+  flex: 1;
+}
+
+.form h1 {
+  font-size: 44px;
+  margin-top: 10;
+}
+
+label {
+  display: block;
+  margin-bottom: 25px;
+  font-size: 22px;
+  margin-top: -10;
+}
+
+input {
+  display: block;
+  width: 100%;
+  margin-top: -10;
+  padding: 3px 0;
+
+  background: none;
+  border: none;
+  border-bottom: 2px solid white;
+  color: white;
+  font-size: 18px;
+}
+
+input:focus {
+  outline: none;
+  border-bottom-color: #ff6a00;
+}
+
+button {
+  margin-top: 30px;
+  background: none;
+  border: none;
+  color: #ff6a00;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 0;
+  margin-top: -10;
+}
+
+button:hover {
+  text-decoration: underline;
+}
+
+.text {
+  flex: 1;
+  font-size: 22px;
+  line-height: 1.5;
+  margin-top: 90;
+}
+
+.footer {
+  display: flex;
+  background: #000;
+  color: #fff;
+  background-color: #000;
+  border-top: 2px solid #ff6a00;
+  gap: 80px;
+  font-size: 22px;
+  font-weight: lighter;
+  font-family: Mohave;
+}
+
+.footer-image img {
+  width: 300px;
+  height: auto;
+  display: block;
+}
+
+.footer-column {
+  min-width: 200px;
+}
+
+.footer-column h4 {
+  color: #ff6a00;
+  font-size: 17px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column li {
+  margin-bottom: 5px;
+}
+
+.footer-column a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-column a:hover {
+  text-decoration: underline;
 }
